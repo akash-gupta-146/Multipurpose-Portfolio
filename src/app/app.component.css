@@ -1,0 +1,4 @@
+.wrapper{
+    background:var(--main-color);
+    height:-webkit-fill-available;
+}
