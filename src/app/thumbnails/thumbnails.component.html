@@ -1,0 +1,14 @@
+<div class="thumbnails">
+    <figure *ngFor="let image of imageList" [routerLink]="['/viewDetails',image.id]">
+      <img [src]="image.url">
+      <figcaption>
+        <div>
+          <span>
+            <i class="material-icons">photo</i><br>
+            <b>{{ image.title }}</b><br>
+            {{ image.category }}
+          </span>
+        </div>
+      </figcaption>
+    </figure>
+</div>

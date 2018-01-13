@@ -1,0 +1,48 @@
+
+<!doctype HTML>
+<head>
+<style>
+    .grid-layout{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "header header"
+        "sidebar content"
+        "footer footer";
+    }
+    .grid-layout div:nth-child(even){
+        background:hotpink;
+    }
+    .grid-layout div:nth-child(odd){
+        background:yellowgreen;
+    } 
+    .title{
+        grid-area:title;
+    }
+    .header{
+        grid-area:header;
+    }
+    .sidebar{
+        grid-area:sidebar;
+    }
+    .content{
+        grid-area:content;
+    }
+    .footer{
+        grid-area:footer;
+    }
+
+</style>
+</head>
+<body>
+    <div class="grid-layout">
+        <div class="title">title </div>
+        <div class="header">header</div>
+        <div class="sidebar">sidebar </div>
+        <div class="content">content </div>
+        <div class="footer">footer </div>
+
+    </div>
+</body>

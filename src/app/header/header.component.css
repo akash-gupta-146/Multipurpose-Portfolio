@@ -1,0 +1,18 @@
+header{
+    display:flex;
+    background:var(--main-color);
+}
+header ul{
+    list-style:none;
+    margin-bottom:0px !important;
+}
+header ul li{
+    float:left;
+    padding:20px;
+    color:var(--lightGray-color);
+    border-bottom:3px solid transparent;
+}
+header ul li:hover{
+    color: var(--highlight-color);
+    border-bottom:3px solid var(--highlight-color);
+}

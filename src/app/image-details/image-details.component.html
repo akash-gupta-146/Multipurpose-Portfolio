@@ -1,0 +1,11 @@
+<div class="image-block">
+  <div image>
+    <img [src]="image.url" />
+  </div>
+  <div details>
+      <i class="material-icons" close (click)="goBack()">close</i>
+    <h2>{{ image.title }}</h2>
+    Category: {{ image.category }}
+    <div caption>{{ image.caption }}</div>
+  </div>
+</div>
