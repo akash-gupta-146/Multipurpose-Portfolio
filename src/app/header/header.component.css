@@ -12,7 +12,7 @@ header ul li{
     color:var(--lightGray-color);
     border-bottom:3px solid transparent;
 }
-header ul li:hover{
-    color: var(--highlight-color);
-    border-bottom:3px solid var(--highlight-color);
+header ul li:hover , .active{
+    color: var(--highlight-color) !important;
+    border-bottom:3px solid var(--highlight-color) !important;
 }

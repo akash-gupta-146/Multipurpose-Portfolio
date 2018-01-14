@@ -11,6 +11,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2px;
+  transition:0.6s;
 }
 
 figure {

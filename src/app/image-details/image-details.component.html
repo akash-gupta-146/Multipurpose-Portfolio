@@ -1,11 +1,24 @@
 <div class="image-block">
+  <div left arrow (click)="previousImage()" *ngIf="image">
+    <span><i class="material-icons">keyboard_arrow_left</i></span>
+  </div>
+  <div left arrow (click)="gotoThumbnails()" *ngIf="!image">
+    <span><i class="material-icons">keyboard_arrow_left</i></span>
+  </div>
   <div image>
     <img [src]="image.url" />
   </div>
+
   <div details>
-      <i class="material-icons" close (click)="goBack()">close</i>
+    <i class="material-icons" close (click)="goBack()">close</i>
     <h2>{{ image.title }}</h2>
-    Category: {{ image.category }}
+      Category: {{ image.category }}
     <div caption>{{ image.caption }}</div>
+  </div>
+  <div right arrow (click)="nextImage()" *ngIf="image">
+    <span><i class="material-icons">keyboard_arrow_right</i></span>
+  </div>
+  <div right arrow (click)="gotoThumbnails()" *ngIf="!image">
+    <span><i class="material-icons">keyboard_arrow_right</i></span>
   </div>
 </div>

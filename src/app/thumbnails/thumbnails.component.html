@@ -1,5 +1,5 @@
 <div class="thumbnails">
-    <figure *ngFor="let image of imageList" [routerLink]="['/viewDetails',image.id]">
+    <figure *ngFor="let image of (imageList | imageFilter:imageService.filterCategory) " [routerLink]="['/viewDetails',image.id]">
       <img [src]="image.url">
       <figcaption>
         <div>

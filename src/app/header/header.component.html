@@ -1,16 +1,16 @@
 <header>
   <ul collapse>
-    <li>
+    <li [class.active]="activeFilter=='all'" (click)="filterBy('all')">
       All
     </li>
-    <li>
-      Modals
+    <li [class.active]="activeFilter=='House'" (click)="filterBy('House')">
+      House
     </li>
-    <li>
-      Card
+    <li [class.active]="activeFilter=='fish'" (click)="filterBy('fish')">
+      Fish
     </li>
-    <li>
-      Bikes
+    <li [class.active]="activeFilter=='cars'" (click)="filterBy('cars')">
+      Cars
     </li>
   </ul>
 </header>

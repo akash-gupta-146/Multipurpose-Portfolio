@@ -1,4 +1,4 @@
 .wrapper{
     background:var(--main-color);
-    height:-webkit-fill-available;
+    min-height:-webkit-fill-available;
 }

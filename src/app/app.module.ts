@@ -7,19 +7,21 @@ import { ThumbnailsComponent } from './thumbnails/thumbnails.component';
 import { ImageDetailsComponent } from './image-details/image-details.component';
 import { RouteModule } from './/router.module';
 import { ImageService } from './image.service';
+import { ImageFilter } from './image.filter';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ThumbnailsComponent,
-    ImageDetailsComponent
+    ImageDetailsComponent,
+    ImageFilter
   ],
   imports: [
     BrowserModule,
     RouteModule
   ],
-  providers: [ImageService],
+  providers: [ImageService,ImageFilter],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

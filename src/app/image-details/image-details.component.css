@@ -2,6 +2,10 @@
     display:flex;
     padding:10px;
     background:#222222;
+    animation-name:fade;
+    animation-duration:0.9s;
+    animation-timing-function: ease;
+    position: relative;
 }
 div[image]{
     padding:30px;
@@ -14,6 +18,36 @@ div[image] img{
     display:block;
     margin:auto;
     box-shadow: 0 5px 35px rgba(0,0,0,.65);
+}
+
+div[arrow]{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    height:70px;
+    width:30px;
+    background:#3d3d3d;
+    display:table;
+    transition:0.2s;
+}
+div[arrow]:hover{
+    background:#454545;
+}
+
+div[arrow] span{
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+    color:gray;
+    font-size:30px;
+}
+
+div[left]{
+    left:0;
+}
+
+div[right]{
+    right:0;
 }
 
 div[details]{
@@ -35,6 +69,14 @@ i[close]{
     transition:0.3s;
     cursor:pointer;
 }
-i[close]:hover{
+i[close]:fade{
     color:white;
+}
+@keyframes dropDown{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }

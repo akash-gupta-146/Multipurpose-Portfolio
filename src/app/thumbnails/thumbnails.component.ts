@@ -7,13 +7,15 @@ import { Image } from '../images';
   templateUrl: './thumbnails.component.html',
   styleUrls: ['./thumbnails.component.css']
 })
-export class ThumbnailsComponent implements OnInit {
+export class ThumbnailsComponent implements OnInit{
 
   imageList: Image[];
+  filterBy:any;
 
   constructor(private imageService: ImageService) { }
 
   ngOnInit() {
+    this.filterBy = 'all';
     this.getImages();
   }
 
